@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Moon, Mountains, StarField, Tree } from '@/components'
+import { Moon, StarField, Tree, Mountains } from '@/components'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -7,11 +7,11 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative w-full min-h-screen">
       <Moon />
       <StarField />
       <Mountains />
-      <Tree />
+      {/* <Tree /> */}
     </div>
   )
 }

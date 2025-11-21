@@ -1,24 +1,12 @@
 @import 'tailwindcss';
 
 body {
-  margin: 0;
-  overflow-x: hidden;
-  background: #0b1027; /* fallback */
-  font-family: sans-serif;
-  color: white;
-}
-
-/* Permanent night sky */
-#sky {
-  background: linear-gradient(#0b1027, #1a1e38);
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-}
-
-/* Scene container */
-#scene {
+  background: #0b1027;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  overflow-x: hidden;
+}
+
+body,
+html {
+  overflow-x: hidden;
 }
