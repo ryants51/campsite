@@ -1,48 +1,56 @@
 import { Tree } from './Tree'
 
-function Forest() {
+export function Forest() {
   return (
     <>
-      <div className="absolute z-[12] h-[62dvh] w-auto left-[-6vw] bottom-6">
+      {/* LEFT — Always visible (2 trees) */}
+      {/* Always visible (2 trees) */}
+      <div className="absolute z-[12] h-[62dvh] w-auto left-[-12vw] bottom-6">
         <Tree />
       </div>
-      <div className="absolute z-[11] h-[54dvh] w-auto left-[3vw] bottom-12">
+      <div className="absolute z-[11] h-[54dvh] w-auto left-[0vw] bottom-12">
         <Tree />
       </div>
-      <div className="absolute z-[10] h-[45dvh] w-auto left-[8vw] bottom-34">
-        <Tree />
-      </div>
-      <div className="absolute z-[13] h-[64dvh] w-auto left-[15.5vw] bottom-6">
-        <Tree />
-      </div>
-      <div className="absolute z-[12] h-[52dvh] w-auto left-[22vw] bottom-12">
-        <Tree />
-      </div>
-      <div className="absolute z-[11] h-[50dvh] w-auto left-[27vw] bottom-27">
+      <div className="hidden sm:block  absolute z-[11] h-[50dvh] left-[5vw] bottom-20">
         <Tree />
       </div>
 
-      {/* right trees */}
-      <div className="absolute z-[11] h-[54dvh] w-auto left-[67vw] bottom-12">
+      {/* LEFT — Show at >=800px (md) */}
+      <div className="hidden md:block absolute left-[8vw] bottom-34 h-[45dvh] z-[10]">
         <Tree />
       </div>
-      <div className="absolute z-[10] h-[45dvh] w-auto left-[73vw] bottom-27">
+
+      <div className="hidden md:block absolute left-[15.5vw] bottom-6 h-[64dvh] z-[13]">
         <Tree />
       </div>
-      <div className="absolute z-[13] h-[62dvh] w-auto left-[79vw] bottom-8">
+
+      {/* LEFT — Show at >=1300px (xl) */}
+      <div className="hidden xl:block absolute left-[22vw] bottom-12 h-[52dvh] z-[12]">
         <Tree />
       </div>
-      <div className="absolute z-[11] h-[40dvh] w-auto left-[85vw] bottom-38">
+
+      {/* RIGHT — Always visible (2 trees) */}
+      <div className="absolute left-[79vw] bottom-8 h-[62dvh] z-[13]">
         <Tree />
       </div>
-      <div className="absolute z-[12] h-[58dvh] w-auto left-[88vw] bottom-10">
+
+      <div className="absolute left-[85vw] bottom-38 h-[40dvh] z-[11]">
         <Tree />
       </div>
-      <div className="absolute z-[13] h-[60dvh] w-auto left-[94vw] bottom-28">
+
+      {/* RIGHT — Show at >=800px (md) */}
+      <div className="hidden md:block absolute left-[88vw] bottom-10 h-[58dvh] z-[12]">
+        <Tree />
+      </div>
+
+      <div className="hidden md:block absolute left-[94vw] bottom-28 h-[60dvh] z-[13]">
+        <Tree />
+      </div>
+
+      {/* RIGHT — Show at >=1300px (xl) */}
+      <div className="hidden xl:block absolute left-[73vw] bottom-27 h-[45dvh] z-[11]">
         <Tree />
       </div>
     </>
   )
 }
-
-export { Forest }
