@@ -1,0 +1,28 @@
+.forest > div {
+  transform-origin: bottom center;
+  animation: sway 20s ease-in-out infinite;
+}
+
+.forest > div:nth-child(3n) {
+  animation-duration: 6s;
+}
+
+.forest > div:nth-child(4n) {
+  animation-duration: 9s;
+}
+
+.forest > div:nth-child(5n) {
+  animation-duration: 5.5s;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-0.8deg);
+  }
+  50% {
+    transform: rotate(0.8deg);
+  }
+  100% {
+    transform: rotate(-0.8deg);
+  }
+}
