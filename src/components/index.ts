@@ -1,4 +1,5 @@
 export * from './StarField'
 export * from './Moon'
 export * from './Mountains'
-export * from './Tree'
+export * from './Forest/Tree'
+export * from './Forest'
