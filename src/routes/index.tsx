@@ -6,6 +6,7 @@ import {
   Mountains,
   Tent,
   Campfire,
+  Sign,
 } from '@/components'
 
 export const Route = createFileRoute('/')({
@@ -21,6 +22,7 @@ function App() {
       <Forest />
       <Tent />
       <Campfire />
+      <Sign />
     </div>
   )
 }
