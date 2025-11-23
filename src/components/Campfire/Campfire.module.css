@@ -1,0 +1,37 @@
+/* 🔥 Instant mirror/unmirror (no flicker) */
+@keyframes fireMirrorFlip {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.fireFlip {
+  animation: fireMirrorFlip 2s infinite steps(2, jump-none);
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* 🔥 Smooth wobble on a wrapper, NOT the flipping SVG */
+@keyframes fireWobble {
+  0% {
+    transform: rotate(-1deg) scale(1.02);
+  }
+  50% {
+    transform: rotate(1deg) scale(0.98);
+  }
+  100% {
+    transform: rotate(-1deg) scale(1.02);
+  }
+}
+
+.fireWrapper {
+  animation: fireWobble 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
