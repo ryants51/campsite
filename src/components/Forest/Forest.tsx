@@ -3,68 +3,68 @@ import styles from './Forest.module.css'
 
 export function Forest() {
   return (
-    <div className={styles.forest}>
-      {/* LEFT — Always visible (2 trees) */}
-      <div className={`absolute z-[12] h-[62dvh] w-auto left-[-12vw] bottom-6`}>
+    <div
+      className={`pointer-events-none absolute inset-0 overflow-visible ${styles.forest}`}
+    >
+      {/* MOBILE — background only + two framing trees */}
+      <div className="absolute left-[-24vw] bottom-16 h-[50dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="absolute left-[7vw] bottom-40 h-[25dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="absolute left-[24vw] bottom-16 h-[50dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="absolute left-[60vw] bottom-24 h-[55dvh] z-[12]">
         <Tree />
       </div>
 
-      <div className={`absolute z-[11] h-[54dvh] w-auto left-[0vw] bottom-12`}>
+      {/* TABLET ≥640px — add some mid-foreground trees */}
+      <div className="hidden sm:block absolute left-[-20vw] bottom-5 h-[60dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="hidden sm:block absolute left-[44vw] bottom-40 h-[35dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="hidden sm:block absolute right-[-15vw] bottom-30 h-[60dvh] z-[12]">
         <Tree />
       </div>
 
-      <div
-        className={`hidden sm:block absolute z-[11] h-[50dvh] left-[5vw] bottom-20`}
-      >
+      {/* Laptop ≥1024px — remove middle, add flanking clusters */}
+      <div className="hidden lg:block absolute left-[-13vw] bottom-6 h-[58dvh] z-[13]">
+        <Tree />
+      </div>
+      <div className="hidden lg:block absolute left-[10vw] bottom-30 h-[47dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="hidden lg:block absolute left-[36vw] bottom-44 h-[26dvh] z-[11]">
+        <Tree />
+      </div>
+      <div className="hidden lg:block absolute right-[0vw] bottom-26 h-[38dvh] z-[13]">
+        <Tree />
+      </div>
+      <div className="hidden lg:block absolute right-[10vw] bottom-40 h-[32dvh] z-[12]">
+        <Tree />
+      </div>
+      <div className="hidden lg:block absolute right-[0vw] bottom-14 h-[66dvh] z-[13]">
         <Tree />
       </div>
 
-      {/* LEFT — >=800px */}
-      <div
-        className={`hidden md:block absolute left-[8vw] bottom-34 h-[45dvh] z-[10]`}
-      >
+      {/* Desktop ≥1280px — more trees, larger sizes */}
+      <div className="hidden xl:block absolute left-[-3vw] bottom-26 h-[58dvh] z-[13]">
         <Tree />
       </div>
-
-      <div
-        className={`hidden md:block absolute left-[15.5vw] bottom-6 h-[64dvh] z-[13]`}
-      >
+      <div className="hidden xl:block absolute left-[18vw] bottom-30 h-[38dvh] z-[13]">
         <Tree />
       </div>
-
-      {/* LEFT — >=1300px */}
-      <div
-        className={`hidden xl:block absolute left-[22vw] bottom-12 h-[52dvh] z-[12]`}
-      >
+      <div className="hidden xl:block absolute left-[35vw] bottom-20 h-[58dvh] z-[13]">
         <Tree />
       </div>
-
-      {/* RIGHT — Always visible (2 trees) */}
-      <div className={`absolute left-[79vw] bottom-8 h-[62dvh] z-[13]`}>
+      <div className="hidden xl:block absolute right-[35vw] bottom-24 h-[66dvh] z-[13]">
         <Tree />
       </div>
-
-      <div className={`absolute left-[85vw] bottom-38 h-[40dvh] z-[11]`}>
-        <Tree />
-      </div>
-
-      {/* RIGHT — >=800px */}
-      <div
-        className={`hidden md:block absolute left-[88vw] bottom-10 h-[58dvh] z-[12]`}
-      >
-        <Tree />
-      </div>
-
-      <div
-        className={`hidden md:block absolute left-[94vw] bottom-28 h-[60dvh] z-[13]`}
-      >
-        <Tree />
-      </div>
-
-      {/* RIGHT — >=1300px */}
-      <div
-        className={`hidden xl:block absolute left-[73vw] bottom-27 h-[45dvh] z-[11]`}
-      >
+      <div className="hidden xl:block absolute right-[15vw] bottom-24 h-[60dvh] z-[13]">
         <Tree />
       </div>
     </div>
