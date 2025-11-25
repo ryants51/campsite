@@ -259,17 +259,34 @@ function Sign() {
             absolute
             top-[12%] left-[45%]
             -translate-x-1/2 
-            text-white
-            text-[3.4vw] md:text-[1.8vw] lg:text-[1.2vw]
-            font-bold
-            drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)]
-            pointer-events-none
-            whitespace-nowrap
+            text-[#311B08]
+            text-[18px]
+            font-black
+            font-[NationalPark]
             z-[20]
-            rotate-[345deg]
+            rotate-[-12deg]
+            uppercase
+            whitespace-nowrap
           "
         >
-          Blog Posts
+          Blog&nbsp;Posts
+        </div>
+        <div
+          className="
+            absolute
+            top-[41%] left-[50%]
+            -translate-x-1/2 
+            text-[#311B08]
+            text-[22px]
+            font-black
+            font-[NationalPark]
+            z-[20]
+            rotate-[-10deg]
+            uppercase
+            whitespace-nowrap
+          "
+        >
+          About&nbsp;Me
         </div>
       </div>
     </div>
