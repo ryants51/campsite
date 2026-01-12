@@ -254,13 +254,14 @@ function Sign() {
             </filter>
           </defs>
         </svg>
-        <div
+        <a
+          href="blog"
           className="
             absolute
             top-[12%] left-[45%]
             -translate-x-1/2 
             text-[#311B08]
-            text-[18px]
+            text-[clamp(16px,1vw,18px)]
             font-black
             font-[NationalPark]
             z-[20]
@@ -270,14 +271,16 @@ function Sign() {
           "
         >
           Blog&nbsp;Posts
-        </div>
-        <div
+        </a>
+
+        <a
+          href="about-me"
           className="
             absolute
             top-[41%] left-[50%]
             -translate-x-1/2 
             text-[#311B08]
-            text-[22px]
+            text-[clamp(18px,1.1vw,22px)]
             font-black
             font-[NationalPark]
             z-[20]
@@ -287,7 +290,7 @@ function Sign() {
           "
         >
           About&nbsp;Me
-        </div>
+        </a>
       </div>
     </div>
   )
