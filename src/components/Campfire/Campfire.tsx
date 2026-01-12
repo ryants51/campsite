@@ -4,7 +4,7 @@ import { FireSmoke } from './FireSmoke'
 
 function Campfire() {
   return (
-    <div className="absolute left-[30vw] bottom-5 h-[13dvh] w-auto z-[20]">
+    <div className="absolute left-[37%] bottom-0 h-[13dvh] z-[20]">
       <div className="relative h-full w-auto flex items-end justify-center">
         <Logs />
         <Fire />

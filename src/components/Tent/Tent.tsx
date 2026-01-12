@@ -1,6 +1,6 @@
 function Tent() {
   return (
-    <div className={`md:block absolute left-[55vw] bottom-15 h-[20dvh] z-[13]`}>
+    <div className="absolute left-[60%] bottom-10 h-[20dvh] z-[20]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-full w-auto"

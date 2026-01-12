@@ -20,9 +20,13 @@ function App() {
       <StarField />
       <Mountains />
       <Forest />
-      <Tent />
-      <Campfire />
-      <Sign />
+      <div className="absolute inset-x-0 bottom-0 flex justify-center pointer-events-none">
+        <div className="relative w-full max-w-[600px] ">
+          <Tent />
+          <Campfire />
+          <Sign />
+        </div>
+      </div>
     </div>
   )
 }

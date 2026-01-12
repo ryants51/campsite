@@ -1,6 +1,6 @@
 function Sign() {
   return (
-    <div className={`md:block absolute left-[5vw] bottom-20 h-[17dvh] z-[13]`}>
+    <div className="absolute left-[5%] bottom-[5dvh] h-[17dvh] z-[25]">
       <div className="relative h-full w-auto flex items-end justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
